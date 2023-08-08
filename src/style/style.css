@@ -1,12 +1,6 @@
 body {
     background-color: pink;
 }
-h1 {
-    color: mediumpurple;
-}
-p {
-    color: blueviolet;
-}
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -32,6 +26,6 @@ p {
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #04AA6D;
+    background-color: palevioletred;
     color: white;
   }
