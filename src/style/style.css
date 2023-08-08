@@ -1,5 +1,5 @@
 body {
-  margin-top: 30px;
+  padding-top: 50px;
   background-color: pink;
 }
 
@@ -9,6 +9,7 @@ body {
   overflow: hidden;
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
 }
   
