@@ -1,11 +1,106 @@
-body {
-  padding-top: 50px;
-  background-color: pink;
+:root {
+  --dark-color: darkgreen;
+  --light-color: lightgreen;
+  --secondary-color: forestgreen;
+  --background-color: honeydew;
+  --light-text: white;
+  --dark-text: black;
 }
 
-/* Add a black background color to the top navigation */
+/* Elements */
+
+body {
+  margin-top: 75px;
+  background-color: var(--background-color);
+}
+
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-top: 20px;
+}
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+}
+input[type="submit"], input[type="reset"] {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
+h1, h2 {
+  color: var(--dark-color);
+  margin-bottom: 0.5em;
+}
+
+h3, h4 {
+  color: var(--dark-text);
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+}
+
+p {
+  line-height: 1.6;
+  margin-top: 0.1em;
+  margin-bottom: 0em;
+}
+
+ul, li {
+  color: var(--dark-text);
+  margin-top: 0.1em;
+}
+
+img {
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--dark-color);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+/* Classes */
+
+.image-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.image-container img {
+  flex: 1 0 auto;
+  margin: 10px;
+  max-width: 30%;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.social-media a {
+  color: #000;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-media a:hover {
+  color: #0077b5; /* Change this to your preferred color */
+}
+
 .topNav {
-  background-color: black;
+  background-color: var(--dark-color);
   overflow: hidden;
   position: fixed;
   top: 0;
@@ -16,7 +111,7 @@ body {
 /* Style the links inside the navigation bar */
 .topNav a {
   float: left;
-  color: white;
+  color: var(--light-text);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -25,12 +120,16 @@ body {
   
 /* Change the color of links on hover */
 .topNav a:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--light-color);
+  color: var(--dark-text);
 }
 
 /* Add a color to the active/current link */
 .topNav a.active {
-  background-color: palevioletred;
-  color: white;
+  background-color: var(--secondary-color);
+  color: var(--light-text);
+}
+
+.job {
+  margin-bottom: 1em;
 }
