@@ -4,24 +4,35 @@
         <link rel="stylesheet" href="../style/style.css">
     </head>
 
-    <div class="topNav">
-        <a href="../../index.html">Home</a>
-        <a href="/src/pages/work_experience.html">Work Experience</a>
-        <a href="/src/pages/projects.html">Projects</a>
-        <a href="/src/pages/hobbies.html">Hobbies</a>
-        <a class="active" href="/src/pages/contact_me.html">Contact Me</a>
-    </div>
-
     <body>
-        <form action="mailto:abbey.kerkmann@gmail.com" method="post" enctype="text/plain">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <label for="mail">E-mail:</label>
-            <input type="text" id="mail" name="mail">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-            <input type="submit" value="Send">
-            <input type="reset" value="Reset">
-        </form>
+        <div class="container">
+            <div class="topNav">
+                <a href="../../index.html">Home</a>
+                <a href="/src/pages/work_experience.html">Work Experience</a>
+                <a href="/src/pages/projects.html">Projects</a>
+                <a href="/src/pages/hobbies.html">Hobbies</a>
+                <a class="active" href="/src/pages/contact_me.html">Contact Me</a>
+            </div>
+
+            <h1>Contact Me</h1>
+            <p>If you have any questions, feel free to reach out to me. You can use the form below to send me an email directly. I'll do my best to get back to you as soon as possible.</p>
+            <h2>My Contact Details</h2>
+            <p>Phone Number: +1 (647) 926-8951</p>
+            <p>Email: abbey.kerkmann@gmail.com</p>
+            
+            <form action="mailto:abbey.kerkmann@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="mail">E-mail:</label>
+                <input type="text" id="mail" name="mail">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </form>
+            <footer>
+                <p>&copy; 2023 Abbey Kerkmann. All rights reserved.</p>
+            </footer>
+        </div>
     </body>
 </html>
