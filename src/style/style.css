@@ -182,7 +182,7 @@ input[type="reset"]:hover {
   padding-left: 10px;
 }
 
-.github-link {
+.button-link {
   background-color: var(--secondary-color);
   color: var(--light-text);
   padding: 10px 20px;
@@ -191,7 +191,7 @@ input[type="reset"]:hover {
   margin-bottom: 20px;
 }
 
-.github-link:hover {
+.button-link:hover {
   background-color: var(--light-color);
   color: var(--dark-text);
 }
